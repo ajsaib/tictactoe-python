@@ -85,6 +85,7 @@ def new_game():
 
 
 #game setup
+print("TIC TAC TOE")
 playerX = "X"
 playerO = "O"
 curr_player = playerX
