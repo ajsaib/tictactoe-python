@@ -11,6 +11,10 @@ def set_tile(row, column):
         return
     
     board[row][column]["text"] = curr_player #mark the board
+    if curr_player == playerX:
+        board[row][column]["foreground"] = color_blue
+    else:
+        board[row][column]["foreground"] = color_red
 
     if curr_player == playerO: #switch player
         curr_player = playerX
@@ -93,6 +97,9 @@ board = [[0, 0, 0],
          [0, 0, 0]]
 
 color_blue = "#4584b6"
+#color_x = "#5fa8ff"
+#color_o = "#ff6b6b"
+color_red = "#ff6b6b"
 color_yellow = "#ffde57"
 color_gray = "#343434"
 color_light_gray = "#646464"
